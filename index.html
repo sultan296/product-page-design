@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="boxOne">
+                <div class="image">
+                    <img src="./images/p1.jpg" alt="" id="image">
+                </div>
+                <div class="images">
+                    <img src="./images/p1.jpg" alt="" onclick="imageShow(this.src)">
+                    <img src="./images/p2.jpg" alt="" onclick="imageShow(this.src)">
+                    <img src="./images/p3.jpg" alt="" onclick="imageShow(this.src)">
+                    <img src="./images/p4.jpg" alt="" onclick="imageShow(this.src)">
+                    <img src="./images/p5.jpg" alt="" onclick="imageShow(this.src)">
+                    <img src="./images/p6.jpg" alt="" onclick="imageShow(this.src)">
+                </div>
+            </div>
+            <div class="boxTwo">
+                <h3>Beats Solo Wireless</h3>
+                <h4>$999.99</h4>
+                <p>Experience unparalleled sound quality with the Apple Beats Solo 4 On-Ear Wireless Headphones. With up to 50 hours of battery life, quick charge capabilities (10 minutes for 5 hours), and spatial audio with dynamic head tracking. </p>
+                <div id="form">
+                    <p id="color-picker">Color</p>
+                    <input type="radio" name="colors" class="clr" checked value="Color-Rose Gold" onclick="colorName(this.value)">
+                    <input type="radio" name="colors" class="clr" value="Color-Black" onclick="colorName(this.value)">
+                    <input type="radio" name="colors" class="clr" value="Color-Brass" onclick="colorName(this.value)">
+                    <input type="radio" name="colors" class="clr" value="Color-Green" onclick="colorName(this.value)">
+                    <input type="radio" name="colors" class="clr" value="Color-Dark-Goldenrod" onclick="colorName(this.value)">
+                    <input type="radio" name="colors" class="clr" value="Color-Turkey-Red" onclick="colorName(this.value)">
+                    <input type="radio" name="colors" class="clr" value="Color-Tropical-Rain-Forest" onclick="colorName(this.value)">
+                    <div class="number">
+                        <p>Quantity</p>
+                        <div class="quantity">
+                            <select name="">
+                                <option value="quantity 1">1</option>
+                                <option value="quantity 2">2</option>
+                                <option value="quantity 3">3</option>
+                                <option value="quantity 4">4</option>
+                                <option value="quantity 5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>Add to Bag</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
